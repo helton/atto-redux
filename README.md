@@ -19,8 +19,9 @@ This is **not** a full compatible [Redux](http://redux.js.org/) implementation, 
 ## Todo list
 - [ ] Add linter
 - [ ] Add flow support
+- [ ] Add format: Standard JS
 - [x] Add badges
-- [ ] Check dependencies (all up to date?)
+- [x] Check dependencies (all up to date?)
 - [ ] Documentation
   - [x] Link to the original Redux page (for a complete solution) in the README.md
   - [ ] Add examples

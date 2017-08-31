@@ -4,10 +4,15 @@ import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify';
 
 const env = process.env.NODE_ENV
+const isProduction = env === 'production'
 
 const config = {
-  format: 'umd',
-  moduleName: 'AttoRedux',
+  output: {
+    file: `dist/atto-redux${isProduction ? '.min' : ''}.js`,
+    format: 'umd',
+    name: 'AttoRedux',
+    sourcemap: true
+  },
   plugins: [
     nodeResolve({
       jsnext: true
@@ -22,7 +27,7 @@ const config = {
   ]
 }
 
-if (env === 'production') {
+if (isProduction) {
   config.plugins.push(
     uglify({
       compress: {
