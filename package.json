@@ -37,9 +37,8 @@
     "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "test": "cross-env BABEL_ENV=commonjs jest",
     "test:watch": "yarn test -- --watch",
-    "test:coverage": "yarn test -- --coverage && yarn test:send-coverage-report",
-    "test:watch-coverage": "yarn test -- --coverage --watch",
-    "test:send-coverage-report": "cat ./coverage/lcov.info | coveralls"
+    "test:coverage": "yarn test -- --coverage",
+    "test:watch-coverage": "yarn test -- --coverage --watch"
   },
   "jest": {
     "testRegex": "(/test/.*\\.spec.js)$",
