@@ -62,3 +62,6 @@ coverage/
 dist/
 es/
 lib/
+
+# Flow types
+flow-typed/

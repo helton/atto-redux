@@ -1,6 +1,7 @@
 {
   "presets": [
-    ["es2015", { "modules": false } ]
+    ["es2015", { "modules": false } ],
+    "flow"
   ],
   "plugins": [
     "transform-class-properties",
@@ -12,5 +13,7 @@
         "transform-es2015-modules-commonjs"
       ]
     }
-  }
+  },
+  "sourceMaps": true,
+  "retainLines": true
 }

@@ -1,3 +1,4 @@
+// @flow
 import mapValues from 'lodash-es/mapValues'
 
 const combineReducers = reducers =>

@@ -1,3 +1,4 @@
+// @flow
 import isPlainObject from 'lodash-es/isPlainObject'
 
 class Store {

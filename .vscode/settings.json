@@ -1,0 +1,5 @@
+{
+  "flow.useNPMPackagedFlow": true,
+  "flow.runOnEdit": true,
+  "javascript.validate.enable": false
+}

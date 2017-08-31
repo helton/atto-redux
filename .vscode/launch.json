@@ -15,7 +15,8 @@
       "internalConsoleOptions": "neverOpen",
       "env": {
         "BABEL_ENV": "commonjs"
-      }
+      },
+      "sourceMaps": true
     }
   ]
 }
