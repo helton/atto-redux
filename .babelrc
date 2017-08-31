@@ -3,7 +3,8 @@
     ["es2015", { "modules": false } ]
   ],
   "plugins": [
-    "transform-class-properties"
+    "transform-class-properties",
+    "transform-object-rest-spread"
   ],
   "env": {
     "commonjs": {

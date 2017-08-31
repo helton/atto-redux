@@ -1,4 +1,4 @@
-# atto-redux [![Build Status](https://travis-ci.org/helton/atto-redux.svg?branch=master)](https://travis-ci.org/helton/atto-redux)
+# atto-redux [![Build Status](https://travis-ci.org/helton/atto-redux.svg?branch=master)](https://travis-ci.org/helton/atto-redux) [![Coverage Status](https://img.shields.io/coveralls/helton/atto-redux/master.svg?style=flat)](https://coveralls.io/github/helton/atto-redux?branch=master) [![npm version](https://img.shields.io/npm/v/atto-redux.svg?style=flat)](https://www.npmjs.com/package/atto-redux) 
 
 > A minimalist [Redux](http://redux.js.org/)-like library
 
@@ -15,11 +15,7 @@
 ## Todo list
 - [ ] Add linter
 - [ ] Add flow support
-- [ ] 100% test coverage
-- [x] Build
-  - [x] Minify
-  - [x] Add all Babel plugins necessary (yeah, a lot of them!)
-  - [x] Add build config for: ES6 modules, CommonJS and AMD
+- [ ] Add badges
 - [ ] Documentation
   - [x] Link to the original Redux page (for a complete solution) in the README.md
   - [ ] Add examples
