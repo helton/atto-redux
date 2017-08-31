@@ -1,6 +1,6 @@
 {
   "name": "atto-redux",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A minimalist Redux-like library",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -45,7 +45,8 @@
     "test": "cross-env BABEL_ENV=commonjs jest",
     "test:watch": "npm test -- --watch",
     "test:coverage": "npm test -- --coverage",
-    "test:watch-coverage": "npm test -- --coverage --watch"
+    "test:watch-coverage": "npm test -- --coverage --watch",
+    "prepublish": "npm run clean-up && npm build"
   },
   "jest": {
     "testRegex": "(/test/.*\\.spec.js)$",
