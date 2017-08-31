@@ -1,6 +1,6 @@
 {
   "name": "atto-redux",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A minimalist Redux-like library",
   "main": "lib/index.js",
   "repository": "https://github.com/helton/atto-redux.git",
