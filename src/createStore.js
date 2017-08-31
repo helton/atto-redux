@@ -1,11 +1,11 @@
-import isPlainObject from 'lodash/isPlainObject'
+import isPlainObject from 'lodash-es/isPlainObject'
 
 class Store {
   constructor(reducer, preloadedState) {
     this.reducer = reducer
     this.observers = []
     this.state = preloadedState
-    this.dispatch({ type: '@@INIT'})
+    this.dispatch({ type: '@@atto-redux/INIT'})
   }
 
   getState = () => {
