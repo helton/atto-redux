@@ -43,9 +43,9 @@
     "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -i src/index.js",
     "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "test": "cross-env BABEL_ENV=commonjs jest",
-    "test:watch": "npm test -- --watch",
+    "test:watch": "npm test -- --watch-all",
     "test:coverage": "npm test -- --coverage",
-    "test:watch-coverage": "npm test -- --coverage --watch",
+    "test:watch-coverage": "npm test -- --coverage",
     "prepublish": "npm run clean-up && npm build"
   },
   "jest": {
