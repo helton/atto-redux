@@ -1,8 +1,16 @@
 {
   "name": "atto-redux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimalist Redux-like library",
   "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src"
+  ],
   "repository": "https://github.com/helton/atto-redux.git",
   "author": "Helton Carlos de Souza <heltoncarlossouza@gmail.com>",
   "license": "MIT",
@@ -35,14 +43,23 @@
     "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -i src/index.js",
     "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "test": "cross-env BABEL_ENV=commonjs jest",
-    "test:watch": "yarn test -- --watch",
-    "test:coverage": "yarn test -- --coverage",
-    "test:watch-coverage": "yarn test -- --coverage --watch"
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage",
+    "test:watch-coverage": "npm test -- --coverage --watch"
   },
   "jest": {
     "testRegex": "(/test/.*\\.spec.js)$",
     "transformIgnorePatterns": [
       "<rootDir>/node_modules/(?!lodash-es)"
     ]
-  }
+  },
+  "npmName": "atto-redux",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
 }
