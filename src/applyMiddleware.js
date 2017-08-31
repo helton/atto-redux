@@ -4,4 +4,4 @@ const applyMiddleware = (...middlewares) => store => {
   )
 }
 
-module.exports = applyMiddleware
+export default applyMiddleware
