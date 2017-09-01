@@ -51,6 +51,7 @@
     "test:watch-coverage": "npm run test:watch -- --coverage",
     "prepublishOnly": "npm run clean-up && npm build",
     "flow-typed:all": "rimraf flow-typed && flow-typed install",
+    "flow-typed:prod": "npm run flow-typed:all -- --ignoreDeps dev",
     "debug": "node --inspect-brk --debug-brk --debug=7000 cross-env BABEL_ENV=commonjs jest --runInBand --no-cache"
   },
   "jest": {
